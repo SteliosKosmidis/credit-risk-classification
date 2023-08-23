@@ -79,47 +79,47 @@ Using a bulleted list, describe the accuracy, precision, and recall scores of th
 
 Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning. (10 points)
 
-Results:
-The purpose of this analysis is to evaluate the performance of  machine learning models in predicting the credit risk associated with loans. 
+
+
+
+Overview: The purpose of this analysis is to evaluate the performance of machine learning models 
+in predicting the credit risk associated with loans.
 
 The stages of the machine learning process in this analysis included:
 
 -Splitting the data 
--Creating and fitting a model
+-Creating and fitting a model 
 -Evaluating the model's performance 
-(Calculate the accuracy score of the model.
-Generate a confusion matrix.
-Print the classification report.)
--Resampling the data using RandomOverSampler to find class imbalance
--Creating and fitting another logistic regression model with the resampled data
--Evaluating the performance of the resampled model using the same metrics
--Methods used in this analysis include LogisticRegression and RandomOverSampler for resampling.
-Model 1 had a high accuracy on predicting:
--Healthy loans (1.00)and somehow similar accuracy on predicting 
+(Calculate the accuracy score of the model. 
+Generate a confusion matrix. 
+Print the classification report.) 
+-Resampling the data using RandomOverSampler to find class imbalance 
+-Creating and fitting another logistic regression model with the resampled data 
+-Evaluating the performance of the resampled model using the same metrics 
+-Methods used in this analysis include LogisticRegression and RandomOverSampler for resampling. 
+Model 1 had a high accuracy on predicting: -Healthy loans (1.00)and somehow similar accuracy on predicting 
+Results:
 -High risk loans (0.87). After recall model 1 had similar accuracy on predicting 
--Healthy risk loans (1.00) and 
--High risk loans (0.89)
-precision    recall  f1-score   support
+-Healthy risk loans (1.00) and -High risk loans (0.89) precision recall f1-score support
 
-           0       1.00      1.00      1.00     18759
-           1       0.87      0.89      0.88       625
+       0       1.00      1.00      1.00     18759
+       1       0.87      0.89      0.88       625
 
-    accuracy                           0.99)     19384
-   macro avg       0.94      0.94      0.94     19384
-weighted avg       0.99      0.99      0.99     19384
+accuracy                           0.99)     19384
+macro avg 0.94 0.94 0.94 19384 weighted avg 0.99 0.99 0.99 19384
 
-Model 2 had a high accuracy on predicting  both healthy loans and high risk loan 
--Healthy loans (0.99)and  
+Model 2 had a high accuracy on predicting both healthy loans and high risk loan 
+-Healthy loans (0.99)and
 -High risk loans (0.99). After recall model 2 had similar, but better accuracy than model 1 on predicting 
 -Healthy risk loans (0.99) and 
--High risk loans (0.99)
-precision    recall  f1-score   support
+-High risk loans (0.99) precision recall f1-score support
 
-           0       0.99      0.99      0.99     56277
-           1       0.99      0.99      0.99     56277
+       0       0.99      0.99      0.99     56277
+       1       0.99      0.99      0.99     56277
 
-    accuracy                           0.99    112554
-   macro avg       0.99      0.99      0.99    112554
-weighted avg       0.99      0.99      0.99    112554
-Based on these results only the best model for predicting health and high risk loans 
-is model 2. Using model we can minimize the credit risk on loan approvals.
+accuracy                           0.99    112554
+macro avg 0.99 0.99 0.99 112554 weighted avg 0.99 0.99 0.99 112554 
+
+Summary:
+Based on these results only the best model for predicting health and high risk loans is model 2. 
+Using model we can minimize the credit risk on loan approvals.
